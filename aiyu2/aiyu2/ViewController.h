@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  ViewController.h
 //  aiyu2
 //
 //  Created by 吴金林 on 15/6/9.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@interface ViewController : UIViewController
 
 
 @end

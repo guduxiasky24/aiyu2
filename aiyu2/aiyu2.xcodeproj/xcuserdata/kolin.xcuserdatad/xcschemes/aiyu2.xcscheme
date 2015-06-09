@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "339179FD1B26D72500C0DD9B"
+               BlueprintIdentifier = "33EEB65D1B26D7710069DDBF"
                BuildableName = "aiyu2.app"
                BlueprintName = "aiyu2"
                ReferencedContainer = "container:aiyu2.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33917A191B26D72500C0DD9B"
+               BlueprintIdentifier = "33EEB6761B26D7710069DDBF"
                BuildableName = "aiyu2Tests.xctest"
                BlueprintName = "aiyu2Tests"
                ReferencedContainer = "container:aiyu2.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33917A191B26D72500C0DD9B"
+               BlueprintIdentifier = "33EEB6761B26D7710069DDBF"
                BuildableName = "aiyu2Tests.xctest"
                BlueprintName = "aiyu2Tests"
                ReferencedContainer = "container:aiyu2.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "339179FD1B26D72500C0DD9B"
+            BlueprintIdentifier = "33EEB65D1B26D7710069DDBF"
             BuildableName = "aiyu2.app"
             BlueprintName = "aiyu2"
             ReferencedContainer = "container:aiyu2.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "339179FD1B26D72500C0DD9B"
+            BlueprintIdentifier = "33EEB65D1B26D7710069DDBF"
             BuildableName = "aiyu2.app"
             BlueprintName = "aiyu2"
             ReferencedContainer = "container:aiyu2.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "339179FD1B26D72500C0DD9B"
+            BlueprintIdentifier = "33EEB65D1B26D7710069DDBF"
             BuildableName = "aiyu2.app"
             BlueprintName = "aiyu2"
             ReferencedContainer = "container:aiyu2.xcodeproj">
