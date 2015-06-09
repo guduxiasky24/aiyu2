@@ -81,12 +81,12 @@
 		33EEB6601B26D7710069DDBF /* aiyu2 */ = {
 			isa = PBXGroup;
 			children = (
+				33EEB6871B26D8270069DDBF /* Classes */,
 				33EEB6651B26D7710069DDBF /* AppDelegate.h */,
 				33EEB6661B26D7710069DDBF /* AppDelegate.m */,
 				33EEB6681B26D7710069DDBF /* ViewController.h */,
 				33EEB6691B26D7710069DDBF /* ViewController.m */,
 				33EEB66B1B26D7710069DDBF /* Main.storyboard */,
-				33EEB66E1B26D7710069DDBF /* Images.xcassets */,
 				33EEB6701B26D7710069DDBF /* LaunchScreen.xib */,
 				33EEB6611B26D7710069DDBF /* Supporting Files */,
 			);
@@ -96,6 +96,7 @@
 		33EEB6611B26D7710069DDBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				33EEB66E1B26D7710069DDBF /* Images.xcassets */,
 				33EEB6621B26D7710069DDBF /* Info.plist */,
 				33EEB6631B26D7710069DDBF /* main.m */,
 			);
@@ -117,6 +118,77 @@
 				33EEB67C1B26D7710069DDBF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33EEB6871B26D8270069DDBF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				33EEB68A1B26D9D20069DDBF /* Lib(第三方) */,
+				33EEB6891B26D9790069DDBF /* Main(主要) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		33EEB6891B26D9790069DDBF /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				33EEB6911B26DBD90069DDBF /* Newfeature(新特性) */,
+				33EEB68F1B26DB580069DDBF /* SetUp(设置) */,
+				33EEB68E1B26DB330069DDBF /* LoveGrowth(爱情成长) */,
+				33EEB68D1B26DA8D0069DDBF /* WeChat(聊天) */,
+				33EEB68C1B26DA4D0069DDBF /* Regrsit(注册) */,
+				33EEB68B1B26DA2E0069DDBF /* Login(登陆) */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		33EEB68A1B26D9D20069DDBF /* Lib(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Lib(第三方)";
+			sourceTree = "<group>";
+		};
+		33EEB68B1B26DA2E0069DDBF /* Login(登陆) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Login(登陆)";
+			sourceTree = "<group>";
+		};
+		33EEB68C1B26DA4D0069DDBF /* Regrsit(注册) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Regrsit(注册)";
+			sourceTree = "<group>";
+		};
+		33EEB68D1B26DA8D0069DDBF /* WeChat(聊天) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "WeChat(聊天)";
+			sourceTree = "<group>";
+		};
+		33EEB68E1B26DB330069DDBF /* LoveGrowth(爱情成长) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "LoveGrowth(爱情成长)";
+			sourceTree = "<group>";
+		};
+		33EEB68F1B26DB580069DDBF /* SetUp(设置) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SetUp(设置)";
+			sourceTree = "<group>";
+		};
+		33EEB6911B26DBD90069DDBF /* Newfeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Newfeature(新特性)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
