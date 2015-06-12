@@ -7,7 +7,13 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NewFeatureViewController.h"
+#import "OAuthController.h"
+#import "AccountModel.h"
+#import "AccountTool.h"
+#import "UIWindow+Extension.h"
+#import "LoginViewController.h"
+#import "IQKeyboardManager.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +22,36 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //键盘处理
+    IQKeyboardManager *manager=[IQKeyboardManager sharedManager];
+    manager.enable=YES;//控制整个功能是否启用。
+    manager.shouldResignOnTouchOutside=YES;//控制点击背景是否收起键盘
+    manager.shouldToolbarUsesTextFieldTintColor=YES;//控制键盘上的工具条文字颜色是否用户自定义。
+    manager.enableAutoToolbar=YES;//控制是否显示键盘上的工具条。
+    //1.创建窗口w;/////////////////////////////////////
+    self.window=[[UIWindow alloc]init];
+    self.window.frame=[UIScreen mainScreen].bounds;
+    
+    //2.设置根控制器
+    
+    //2. 设置根控制器
+    NSString *key = @"CFBundleVersion";
+    // 上一次的使用版本（存储在沙盒中的版本号）
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+    // 当前软件的版本号（从Info.plist中获得）
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+    if ([currentVersion isEqualToString:lastVersion]) { // 版本号相同：这次打开和上次打开的是同一个版本
+        [self.window switchRootViewController];
+    } else { // 这次打开的版本和上一次不一样，显示新特性
+        UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[NewFeatureViewController new]];
+        self.window.rootViewController = nav;
+        // 将当前的版本号存进沙盒
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+    //3.显示窗口
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -35,7 +70,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the ap           aa                                                                                                                                                                                                       plication was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

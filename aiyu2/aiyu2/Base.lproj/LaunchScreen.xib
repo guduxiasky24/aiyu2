@@ -9,10 +9,24 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="加载页" translatesAutoresizingMaskIntoConstraints="NO" id="u4r-hp-cuf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="u4r-hp-cuf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2YC-DE-odg"/>
+                <constraint firstItem="u4r-hp-cuf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9oF-RM-Bns"/>
+                <constraint firstAttribute="bottom" secondItem="u4r-hp-cuf" secondAttribute="bottom" id="YsX-is-Pk6"/>
+                <constraint firstAttribute="trailing" secondItem="u4r-hp-cuf" secondAttribute="trailing" id="eGr-j9-VOc"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="673" y="364"/>
         </view>
     </objects>
+    <resources>
+        <image name="加载页" width="640" height="1136"/>
+    </resources>
 </document>
