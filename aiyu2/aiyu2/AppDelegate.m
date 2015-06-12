@@ -27,8 +27,8 @@
     manager.enable=YES;//控制整个功能是否启用。
     manager.shouldResignOnTouchOutside=YES;//控制点击背景是否收起键盘
     manager.shouldToolbarUsesTextFieldTintColor=YES;//控制键盘上的工具条文字颜色是否用户自定义。
-    manager.enableAutoToolbar=YES;//控制是否显示键盘上的工具条。
-    //1.创建窗口w;/////////////////////////////////////
+    manager.enableAutoToolbar=NO;//控制是否显示键盘上的工具条。
+    //1.创建窗口w;
     self.window=[[UIWindow alloc]init];
     self.window.frame=[UIScreen mainScreen].bounds;
     

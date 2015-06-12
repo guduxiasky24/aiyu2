@@ -1088,6 +1088,9 @@
                                 <state key="normal" backgroundImage="提交">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitBtn:" destination="hDv-EI-dOK" eventType="touchUpInside" id="sjn-3v-jg5"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyR-uQ-bzg" userLabel="没有邀请View">
                                 <rect key="frame" x="78" y="315" width="164" height="22"/>
@@ -1142,6 +1145,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="8hw-bI-0y8"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="codeText" destination="D8S-uh-XSj" id="UXG-52-ooP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SR0-b4-W8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1216,7 +1222,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiK-9C-Qqb" userLabel="验证码View">
                                 <rect key="frame" x="15" y="182" width="290" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="369  258" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h06-ra-BvA" userLabel="验证码">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h06-ra-BvA" userLabel="验证码">
                                         <rect key="frame" x="40" y="25" width="210" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1313,7 +1319,7 @@
                     <navigationItem key="navigationItem" id="b6i-zt-PHO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="codeLabel" destination="h06-ra-BvA" id="4gg-hW-pAN"/>
+                        <outlet property="codeLabel" destination="h06-ra-BvA" id="SvI-8A-5V8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVw-9W-USc" userLabel="First Responder" sceneMemberID="firstResponder"/>
